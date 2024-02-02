@@ -1,10 +1,13 @@
-import Image from "next/image";
-import Header from "./components/Header";
+import FormWrapper from "@/components/FormWrapper";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
-    <div>
+    <main className="min-h-screen flex flex-col">
       <Header />
-    </div>
+      <div className="  mx-auto w-full h-full flex flex-1 items-center justify-center">
+        <FormWrapper />
+      </div>
+    </main>
   );
 }
