@@ -1,8 +1,12 @@
-export default function Id() {
-    return (
-        <div>
-        <h1>id</h1>
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
-        </div>
-    );
-    }
+export default function Id() {
+  return (
+    <div>
+      <Header />
+      <h1>id</h1>
+      <Footer />
+    </div>
+  );
+}
