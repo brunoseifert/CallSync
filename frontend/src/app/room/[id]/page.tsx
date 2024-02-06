@@ -22,7 +22,10 @@ export default function Room({ params }: { params: { id: string } }) {
   const initCamera = async () => {
     const video = await navigator.mediaDevices.getUserMedia({
       video: true,
-      audio: true,
+      audio: {
+        echoCancellation: true,
+        noiseSuppression: true,
+      },
     });
     console.log("🚀 ~ initCamera ~ video:", video);
     if (localStream.current) localStream.current.srcObject = video;
