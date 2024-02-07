@@ -227,7 +227,8 @@ export default function Room({ params }: { params: { id: string } }) {
                 ref={localStream}
               ></video>
               <span className="absolute bottom-3">
-                {sessionStorage.getItem("username")}
+                {typeof window !== "undefined" &&
+                  sessionStorage.getItem("username")}
               </span>
             </div>
             {remoteStreams.map((stream, index) => {
