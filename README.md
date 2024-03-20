@@ -15,5 +15,5 @@ Clone o projeto e no seu terminal rode os seguintes comandos:
 - Cd backend (para abrir a pasta e rode npm run dev, para integrar o back com o front)
 
 ### É necessário manter os dois terminais abertos.
-### O código para você testar em uma sala, vai ser gerado no URL após a sua criação, conforme nas imagens.
+### O código para você testar e entrar em uma sala, vai ser gerado no URL após a sua criação, conforme nas imagens.
 
